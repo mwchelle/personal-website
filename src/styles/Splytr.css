@@ -1,0 +1,245 @@
+.splytr{
+    display: flex;
+    overflow-y: scroll;
+    flex-direction:column;
+    padding-top: 140px;
+    padding-bottom: 100px;
+    gap: 4rem;
+    justify-content: start;
+    align-content: center;
+    background-color: #FFFDF8;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.splytr h1{
+    color:#333;
+}
+
+.splytr img{
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding:2rem;
+}
+
+.logo img{
+    max-width: 40%;
+    height: auto;
+}
+
+.problem{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.features{
+    display: grid;
+    gap: 2rem;
+}
+
+.open{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.open img:nth-of-type(2){
+    max-width: 60%;
+    height: auto;
+}
+
+.lesson{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    row-gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.lesson img{
+    max-width: 60%;
+    height: auto;
+}
+
+.views {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items:center;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.fonts{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    gap: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.fonts img{
+    max-width: 50%;
+    height: auto;
+}
+
+.hover{
+    display: grid;
+    padding-top: 2rem;
+    justify-items: center;
+    align-items:center;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.hover img{
+    max-width: 60%;
+    height: auto;
+}
+
+.hover img:nth-of-type(1){
+    max-width: 40%;
+    height: auto;
+}
+
+.process{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.ending img{
+    max-width: 40%;
+    height: auto;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.final img{
+    max-width: 60%;
+    height: auto;
+}
+
+@media screen and (max-width: 900px){
+    .lesson{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        row-gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .views {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items:center;
+        padding-bottom: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .fonts{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items:center;
+        gap: 5rem;
+        padding-bottom: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .ending img{
+        max-width: 90%;
+        height: auto;
+    }
+
+    .final{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .lesson img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .final img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .open img:nth-of-type(2){
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and  (max-width: 600px){
+    .problem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .open{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .logo img{
+        max-width: 80%;
+        height: auto;
+    }
+
+    .splytr{
+        padding-left: 1rem;
+        padding-right: 0rem;
+    }
+}

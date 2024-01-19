@@ -1,8 +1,8 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./pages/Navbar";
-import Home from "./pages/Home";
+import Navbar from "./pages/Home/Navbar";
+import Home from "./pages/Home/Landing";
 import girlCode from "./pages/Projects/girlcode";
 import splytrUX from "./pages/Projects/splytr";
 

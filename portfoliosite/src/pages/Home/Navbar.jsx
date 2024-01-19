@@ -12,6 +12,16 @@ function Navbar() {
     const closeMenu = () => {
       setNavActive(false);
     };
+
+    const scrollToHero = () => {
+        const aboutSection = document.querySelector("#hero");
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      };
+
+    const scrollToAbout = () => {
+        const aboutSection = document.querySelector("#about");
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      };
   
     // useEffect(() => {
     //   const handleResize = () => {
@@ -47,22 +57,20 @@ function Navbar() {
                 <span className="nav__hamburger__line"></span>
             </a>
             <div className={`nav--items ${navActive ? "active" : ""}`}>
-                <Link to="/">
-                    <button className="navbar--button">
-                        Home
-                    </button>
-                </Link>
-                <Link to="#about">
-                    <button className="navbar--button">
-                        About
-                    </button>
-                </Link>
-                <Link to="#portfolio--section">
+            <Link to="/">
+                <button className="navbar--button" onClick={scrollToHero}>
+                    Home
+                </button>
+            </Link>
+                <button className="navbar--button" onClick={scrollToAbout}>
+                    About
+                </button>
+                <Link to="/portfolio">
                     <button className="navbar--button">
                         Portfolio
                     </button>
                 </Link>
-                <Link to="#contact--section">
+                <Link to="mailto:mw.chellecx@gmail.com">
                     <button className="navbar--button">
                         Contact
                     </button>

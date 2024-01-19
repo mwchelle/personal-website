@@ -38,10 +38,43 @@ h3{
 }
 p{
   color: var(--accent);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.card {
+  height: 30rem;
+  width: 20rem;
+  display: inline-block;
+  background-color: var(--white);
+  border: 3px solid var(--accent);
+  border-radius: 15px;
+}
+.card--content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.card--img {
+  max-height: 10rem;
+}
+.card--text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 12rem;
+}
+.card--name {
+  padding-top: 2rem;
+  height: 4.5rem;
+}
+.card--button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /* NAVBAR */
@@ -228,4 +261,48 @@ p{
 .substack--button:hover {
   background-color: var(--accent);
   color: var(--white);
+}
+
+/* Portfolio */
+.portfolio--section {
+  padding-top: 10rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
+  padding-bottom: 8rem;
+  background-image: linear-gradient(var(--gradiant--dark), var(--gradiant--light));
+}
+.portfolio--container-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.portfolio--container--header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.portfolio--card--box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.portfolio--more--button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* Footer */
+.footer--section{
+  background-color: var(--accent);
+  padding: 2rem;
+}
+.footer--text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer--writing{
+  color: var(--gradiant--light);
 }

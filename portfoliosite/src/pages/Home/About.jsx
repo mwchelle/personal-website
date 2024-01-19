@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 export default function About() {
     return (
         <section id="about" className="about--section">
-            <div className="about--content-box">
+            <div id="about" className="about--content-box">
                 <h1 className="hero--section--title">
                     <u>About <em>Me</em></u>
                     <br/>
@@ -14,13 +14,13 @@ export default function About() {
                 <div className="about--content">
                     <div className="about--information">
                         <div className="about--information-paragraph">
-                        <p>As a business + cs student, I’m passionate about designing and developing technologies that really speak to the needs of users and help people help people. I’m all about user-engagement, experience, and exploring the way identity shapes our usage of technology.
+                        <h3>As a business + cs student, I’m passionate about designing and developing technologies that really speak to the needs of users and help people help people. I’m all about user-engagement, experience, and exploring the way identity shapes our usage of technology.
                         <br/>
                         <br/>
                         Outside of tech, I love music, creative writing, esports/gaming, fashion, cute coffee shops, and the Toronto Raptors. 
                         <br/>
                         <br/>
-                        <em>Find out more about my hobbies -&gt;</em> </p>
+                        <em>Find out more about my hobbies -&gt;</em> </h3>
                         </div>
                         <div className ="about--information-points">
                             <div>

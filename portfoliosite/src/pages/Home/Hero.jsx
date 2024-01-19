@@ -6,7 +6,6 @@ import LinkedinIcon from '../img/linkedin_icon.svg';
 import GithubIcon from '../img/github_icon.svg';
 import DownIcon from  '../img/down_icon.svg';
 import {Link} from 'react-router-dom';
-import Contact from './Contact';
 
 export default function Hero() {
 
@@ -43,7 +42,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className="hero--button-box">
-                <Link to={Contact}>
+                <Link to="mailto:mw.chellecx@gmail.com">
                 <button className="hero--button">
                     <img src={EmailIcon} />
                 </button>

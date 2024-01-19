@@ -1,3 +1,3 @@
 export default function Portfolio() {
-    return <h1> Navbar </h1>;
+    return <h1> Portfolio </h1>;
 }

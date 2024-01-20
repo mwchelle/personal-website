@@ -266,8 +266,8 @@ p{
 /* Portfolio */
 .portfolio--section {
   padding-top: 10rem;
-  padding-right: 20rem;
-  padding-left: 20rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
   padding-bottom: 8rem;
   background-image: linear-gradient(var(--gradiant--dark), var(--gradiant--light));
 }

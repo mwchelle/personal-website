@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7d8def07.css",
+    "main.js": "/static/js/main.ea0bd01b.js",
+    "static/media/palette.svg": "/static/media/palette.9bda581518ce86b2cd64ca40a6a2892d.svg",
+    "static/media/aboutimg.png": "/static/media/aboutimg.a4fc13bce9ecf4d5a297.png",
+    "static/media/gameboard 1.svg": "/static/media/gameboard 1.ad7f288d5df4d967fd4d376112759914.svg",
+    "static/media/girlcode.svg": "/static/media/girlcode.6aa56039aac1501191a6deb44a45d39a.svg",
+    "static/media/discord.svg": "/static/media/discord.c7882c1a5b47b7b4aba4097f7a2e621c.svg",
+    "static/media/github_icon.svg": "/static/media/github_icon.189ef33813eb8c78be3aed8376fc5d2a.svg",
+    "static/media/hero_sprite.svg": "/static/media/hero_sprite.ec0568e240dd6401fb256be1231de0e5.svg",
+    "static/media/splytr.svg": "/static/media/splytr.68ad3d5dededdbd132339303e912b9dd.svg",
+    "static/media/linkedin_icon.svg": "/static/media/linkedin_icon.ded58f653750046a7b0d92c69e8b5aaa.svg",
+    "static/media/email_icon.svg": "/static/media/email_icon.a06fd7b2e485abbebb3ec42217eade4d.svg",
+    "index.html": "/index.html",
+    "static/media/down_icon.svg": "/static/media/down_icon.757121c2b6cf4de7e76f3b1486b21c3c.svg",
+    "static/media/logo.svg": "/static/media/logo.f7bf836582aef178c5d8b622c5c70efc.svg",
+    "main.7d8def07.css.map": "/static/css/main.7d8def07.css.map",
+    "main.ea0bd01b.js.map": "/static/js/main.ea0bd01b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d8def07.css",
+    "static/js/main.ea0bd01b.js"
+  ]
+}

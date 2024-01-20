@@ -16,12 +16,17 @@ function Navbar() {
     const scrollToHero = () => {
         const aboutSection = document.querySelector("#hero");
         aboutSection.scrollIntoView({ behavior: "smooth" });
-      };
+    };
 
     const scrollToAbout = () => {
         const aboutSection = document.querySelector("#about");
         aboutSection.scrollIntoView({ behavior: "smooth" });
-      };
+    };
+
+    const scrollToPortfolio = () => {
+        const aboutSection = document.querySelector("#portfolio");
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+    };
   
     // useEffect(() => {
     //   const handleResize = () => {
@@ -65,8 +70,8 @@ function Navbar() {
                 <button className="navbar--button" onClick={scrollToAbout}>
                     About
                 </button>
-                <Link to="/portfolio">
-                    <button className="navbar--button">
+                <Link to="/">
+                    <button className="navbar--button" onClick={scrollToPortfolio}>
                         Portfolio
                     </button>
                 </Link>

@@ -40,7 +40,7 @@ export default function Portfolio() {
                     <Card type="()" 
                         preview={Monopoly}
                         name="Mr.Chen's Speed Monopoly (2022)"
-                        desc="A simplified player vs. CPU version of Monopoly, built on Java following OOP principles. (2022)"
+                        desc="A simplified player vs. CPU version of Monopoly, built on Java following OOP principles."
                         button={<Link to="https://github.com/mwchelle/monopoly"><p><em><u>Github</u></em></p></Link>}/>
                 </div>
             </div>

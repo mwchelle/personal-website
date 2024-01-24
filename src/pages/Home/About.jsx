@@ -6,13 +6,11 @@ export default function About() {
     return (
         <section id="about" className="about--section">
             <div id="about" className="about--content-box">
-                <h1 className="hero--section--title">
-                    <u>About <em>Me</em></u>
-                    <br/>
-                    <br/>
-                </h1>
                 <div className="about--content">
                     <div className="about--information">
+                        <h1 className="hero--section--title">
+                            <u>About <em>Me</em></u>
+                         </h1>
                         <div className="about--information-paragraph">
                         <h3>As a business + cs student, I’m passionate about designing and developing technologies that really speak to the needs of users and help people help people. I’m all about user-engagement, experience, and exploring the way identity shapes our usage of technology.
                         <br/>

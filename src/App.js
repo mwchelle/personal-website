@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="*" element={<div>404 Not Found</div>}></Route>
-            <Route path="/Portfolio" element={<Portfolio />}></Route>
+            <Route path="/Projects" element={<Home />}></Route>
           </Routes>
         </div>
       </Router>

@@ -1,0 +1,98 @@
+/* Portfolio Section */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Make the section take full width */
+    text-align: center;
+    min-height: 100vh; /* Ensures it takes up the full viewport height */
+    overflow: visible;
+}
+
+/* Header Container with Text and Devpost Icon */
+.header-container {
+    display: flex;
+    align-items: center; /* Aligns text and icon vertically */
+    justify-content: center; /* Centers both the text and icon horizontally */
+}
+
+/* Text Style */
+.text {
+    font-size: 2.5rem; /* Adjust this value based on design preference */
+    margin-right: 10px; /* Adds space between the text and the icon */
+}
+
+/* Devpost Link Styling */
+.devpost-header {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: black; /* Change the color as needed */
+}
+
+/* Projects Box Layout */
+.projects-box {
+    display: flex;
+    flex-wrap: wrap; /* Allows the projects to flow to the next line */
+    justify-content: center;
+    gap: 20px; /* Space between project cards */
+    width: 90%; /* Ensures the project box takes most of the available width */
+    margin-bottom: 4vh;
+}
+
+/* 'Also' Projects Section */
+.projects-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between the rows */
+}
+
+.projects-add h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Links and Tags Layout */
+.project-link {
+    text-decoration: none;
+    color: black; /* Change the color as needed */
+    font-weight: bold;
+}
+
+.tags-container {
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+/* Tags in the top right */
+.tags {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 15; /* Ensure tags are above the card hover effect */
+}
+
+/* Individual tag */
+.tag {
+    background: white;
+    color: black;
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: normal;
+    font-style: italic;
+    padding: 2px;
+    border: 1px solid black;
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 16; /* Ensure tags are above card */
+}

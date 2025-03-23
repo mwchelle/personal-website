@@ -90,7 +90,7 @@ export default function Main() {
             </div>
 
             {/* Dynamic Content Area */}
-            <main className="content">
+            <main className="content fade-in">
                 {sections[section]}
             </main>
         </div>

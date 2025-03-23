@@ -38,10 +38,10 @@ export default function Hero() {
     // State for the stickers (no initial position required)
     const [stickers, setStickers] = React.useState([
         { id: 1, src: Bobo, alt: 'Bobo Sticker', subtitle: 'Bobo & Coco Collector' },
-        { id: 2, src: Williams, alt: 'Williams Sticker', subtitle: 'Go Williams!' },
-        { id: 3, src: Panda, alt: 'Panda Sticker', subtitle: 'Panda <3' },
+        { id: 2, src: Williams, alt: 'Williams Sticker', subtitle: 'Go Williams! + Oscar Piastry' },
+        { id: 3, src: Panda, alt: 'Panda Sticker', subtitle: 'Fav Animal <3' },
         { id: 4, src: Raptor, alt: 'Raptor Sticker', subtitle: 'Sad Raptors Fan ):' },
-        { id: 5, src: Skullpanda, alt: 'Skullpanda Sticker', subtitle: 'Skullpanda Collector' },
+        { id: 5, src: Skullpanda, alt: 'Skullpanda Sticker', subtitle: 'Skullpanda Enjoyer' },
         { id: 6, src: TFT, alt: 'TFT Sticker', subtitle: 'Peaked D2, Set 4.5 💪' }
     ]);
 

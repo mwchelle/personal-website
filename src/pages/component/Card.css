@@ -1,8 +1,8 @@
 /* Project card */
 .project-card {
     position: relative;
-    width: 300px;  /* Adjust the width as needed */
-    height: 20vh;   /* Keeping your original height */
+    width: 40vh;  /* Adjust the width as needed */
+    height: 25vh;   /* Keeping your original height */
     overflow: hidden;
     background-size: contain; /* Ensures the image is stretched to fit the card */
     background-position: center;
@@ -11,6 +11,7 @@
     align-items: flex-end;
     padding: 0; /* Remove padding from the card */
     transition: transform 0.3s ease, filter 0.3s ease;
+    border: 1px solid black;
 }
 
 /* Hover effect on the card */

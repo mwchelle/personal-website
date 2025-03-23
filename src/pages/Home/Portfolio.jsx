@@ -63,20 +63,20 @@ export default function Portfolio() {
                     <h2>also</h2>
 
                     {/* Telco Customer Churn and Splytr with tags */}
-                    <h2>
-                        <a href="telco-customer-churn-link" className="project-link">Telco Customer Churn ↗ </a>
+                    <h3>
+                        <a href="telco-customer-churn-link" className="project-link">Telco Customer Churn ↗</a>
                         <span className="tags-container">
                             <span className="tag">data</span>
                             <span className="tag">ml</span>
                         </span>
-                    </h2>
+                    </h3>
 
-                    <h2>
-                        <a href="splytr-link" className="project-link">Splytr ↗ </a>
+                    <h3>
+                        <a href="splytr-link" className="project-link">Splytr ↗</a>
                         <span className="tags-container">
                             <span className="tag">ui/ux</span>
                         </span>
-                    </h2>
+                    </h3>
                 </div>
             </div>
         </section>

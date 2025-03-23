@@ -106,20 +106,25 @@
 
 .hero-stickers {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center stickers horizontally */
     align-items: center;
     margin-top: 20px;
     width: 100%;
+    gap: 15px; /* Space between stickers */
+    flex-shrink: 1; /* Default value */
 }
 
 .sticker-container {
     text-align: center;
-    margin: 0 15px;
+    margin: 0; /* Remove the margin here to control spacing using gap */
     position: relative;
+    max-width: 11rem; /* Prevent the stickers from getting too large */
+    min-width: 5rem; /* Ensure they don't shrink too much */
 }
 
 .sticker {
-    max-width: 11rem;
+    width: 100%; /* Ensure sticker fills its container */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
 }

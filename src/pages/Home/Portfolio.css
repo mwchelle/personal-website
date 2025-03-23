@@ -2,9 +2,9 @@
 .projects-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%; /* Make the section take full width */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 70%;
     text-align: center;
     min-height: 100vh; /* Ensures it takes up the full viewport height */
     overflow: visible;
@@ -13,14 +13,18 @@
 /* Header Container with Text and Devpost Icon */
 .header-container {
     display: flex;
-    align-items: center; /* Aligns text and icon vertically */
-    justify-content: center; /* Centers both the text and icon horizontally */
+    justify-content: left;
+    margin-bottom: 2vh;
 }
 
 /* Text Style */
 .text {
-    font-size: 2.5rem; /* Adjust this value based on design preference */
-    margin-right: 10px; /* Adds space between the text and the icon */
+    font-size: 2.25vh;
+    text-decoration: underline;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 1.3rem;
+    margin-right: 10px;
 }
 
 /* Devpost Link Styling */
@@ -28,38 +32,54 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 1.5rem; /* Adjust font size as needed */
-    color: black; /* Change the color as needed */
+    font-size: 1.5rem;
+    color: black;
 }
 
 /* Projects Box Layout */
 .projects-box {
     display: flex;
-    flex-wrap: wrap; /* Allows the projects to flow to the next line */
-    justify-content: center;
-    gap: 20px; /* Space between project cards */
-    width: 90%; /* Ensures the project box takes most of the available width */
-    margin-bottom: 4vh;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    width: 90%;
+    margin-bottom: 2vh;
 }
 
 /* 'Also' Projects Section */
 .projects-add {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px; /* Space between the rows */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start;
+    gap: 4px; /* Reduced space between items */
+    margin-top: 0.5rem; /* Small gap before this section */
+}
+
+.projects-add h2,
+.projects-add h3 {
+    margin: 0; /* Remove default margins */
 }
 
 .projects-add h2 {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 2.25vh;
+    text-decoration: underline;
+    color: #333;
+    font-weight: normal;
+    line-height: 1.7; /* Tighten line height */
+}
+
+.projects-add h3 {
+    font-size: 2.5vh;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.2; /* Slightly reduce line height for tighter spacing */
 }
 
 /* Links and Tags Layout */
 .project-link {
     text-decoration: none;
-    color: black; /* Change the color as needed */
+    color: black;
     font-weight: bold;
 }
 
@@ -67,6 +87,7 @@
     display: inline-flex;
     gap: 8px;
     margin-top: 5px;
+    margin-left: 10px;
 }
 
 /* Tags in the top right */
@@ -76,7 +97,7 @@
     right: 10px;
     display: flex;
     gap: 5px;
-    z-index: 15; /* Ensure tags are above the card hover effect */
+    z-index: 15;
 }
 
 /* Individual tag */
@@ -94,5 +115,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 16; /* Ensure tags are above card */
+    z-index: 16;
+}
+
+@media (min-width: 1400px) {
+    /* Styles for screens smaller than 1400px */
+    .projects-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        width: 80%;
+        text-align: center;
+        min-height: 100vh; /* Ensures it takes up the full viewport height */
+        overflow: visible;
+    }
+}
+
+@media (max-width: 1390px) {
+    /* Styles for screens smaller than 1400px */
+    .projects-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        width: 85%;
+        text-align: center;
+        min-height: 100vh; /* Ensures it takes up the full viewport height */
+        overflow: visible;
+    }
+}
+
+@media (max-width: 1240px) {
+    /* Styles for screens smaller than 1400px */
+    .projects-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        width: 85%;
+        text-align: center;
+        min-height: 100vh; /* Ensures it takes up the full viewport height */
+        overflow: visible;
+    }
 }

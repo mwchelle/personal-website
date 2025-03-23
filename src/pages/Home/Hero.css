@@ -1,0 +1,122 @@
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    position: relative; /* Ensure the stickers are positioned within the section */
+    padding-bottom: 40px; /* Add padding to ensure there's space at the bottom for stickers */
+    overflow: hidden;
+}
+
+.hero-content-header {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.hero-header {
+    font-size: 3rem;
+}
+
+.hero-start {
+    font-size: 1.75rem;
+    text-decoration: underline; /* Underline when active */
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 0.1rem; /* Reduce the gap further */
+    line-height: 0.1; /* Adjust the line-height to pull the text closer */
+}
+
+.hero--section--changing {
+    display: flex;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center;     /* Centers the text vertically */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide overflowing text */
+    opacity: 1;          /* Ensure the text is visible */
+    width: 28rem;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for text */
+    vertical-align: bottom;
+}
+
+.hero-header em {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.hero--section--changing.typed-cursor {
+    opacity: 1; /* Smooth appearance of the text */
+}
+
+.custom-hr {
+    border: 0;
+    height: 0.06rem;
+    background-color: #333; /* Change color */
+    margin-top: 0.5rem; /* Adjust spacing */
+    margin-bottom: 1rem; /* Adjust spacing */
+}
+
+.hero-content-about {
+    line-height: 0.2;
+}
+
+.hero-content-about .hero-currently,
+.hero-content-about .hero-driven,
+.hero-content-about .hero-also,
+.hero-content-about .hero-loves {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-content-about h3 {
+    font-size: 1.5rem; /* Adjust text size */
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.hero-content-about h4 {
+    font-size: 1.5rem; /* Adjust text size */
+    font-style: italic;
+    font-weight: normal;
+}
+
+.hero-stickers {
+    display: flex;
+    justify-content: space-between; /* Space out stickers evenly */
+    align-items: center; /* Center stickers vertically */
+    margin-top: 20px; /* Adds some space between the content and stickers */
+    width: 100%;
+    flex-wrap: wrap; /* Allow stickers to wrap onto the next line if needed */
+}
+
+.sticker-container {
+    text-align: center; /* Center the sticker image and subtitle */
+    margin: 0 15px; /* Add space between each sticker */
+    position: relative; /* Needed for absolute positioning of subtitle */
+}
+
+.sticker {
+    max-width: 11rem; /* Size of stickers */
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.sticker:hover {
+    transform: rotate(-10deg); /* Slightly rotate image on hover */
+    filter: brightness(1.2); /* Slightly brighten the image */
+}
+
+.sticker-subtitle {
+    font-size: 1rem; /* Size of the subtitle */
+    margin-top: 10px; /* Space between image and subtitle */
+    color: #555; /* Subtitle color */
+    opacity: 0; /* Hide subtitle by default */
+    transition: opacity 0.3s ease;
+}
+
+.sticker-container:hover .sticker-subtitle {
+    opacity: 1; /* Show subtitle on hover */
+}

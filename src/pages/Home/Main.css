@@ -3,50 +3,87 @@ svg {
     color: #333; /* This would override your specific color */
 }
 
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Apply Montserrat font to all elements */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Main container */
 .container {
     display: flex;
     height: 100vh; /* Full screen height */
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /* Fixed sidebar */
 .sidebar {
-    width: 20vh; /* Adjust width as needed */
+    width: 15%; 
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    background: #f8f9fa; /* Light gray */
-    padding: 20px;
+    background: #fff; /* Light gray */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 2%;
 }
 
+.me {
+    max-width: 15vh;
+}
+
+/* Sidebar List Items */
+/* Remove default list styling */
 .sidebar ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
 }
 
-.sidebar li {
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+/* Sidebar List Items */
+.sidebar ul li {
+    font-size: 1.5rem; /* Adjust text size */
+    font-weight: normal; /* Plain text by default */
+    text-decoration: none; /* No underline by default */
+    cursor: pointer; /* Make the list item clickable */
+    margin: 3vh 0; /* Adds space between list items */
+    margin-left: 2vh;
+    transition: font-weight 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
 }
 
-.sidebar li:hover {
-    background: #ddd;
+/* Active (currently selected) state */
+.sidebar ul li.active {
+    font-weight: bold; /* Bold text when active */
+    text-decoration: underline; /* Underline when active */
+}
+
+/* Hover state */
+.sidebar ul li:hover {
+    font-weight: bolder; /* Make text bolder when hovered */
+}
+
+
+.footer-text {
+    position: fixed;
+    top: 90%;
 }
 
 /* Header */
 .header {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    width: 96%;
+    top: 2%;
+    left: 2%;
+    right: 2%;
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    align-items: center;
+    justify-content: space-between; /* Pushes left and right sections apart */
+    align-items: flex-start;
 }
 
 .header-left {
@@ -54,35 +91,58 @@ svg {
     align-items: center;
 }
 
+/* Logo size */
 .logo {
-    max-width: 100px; /* Adjust the size of your logo */
+    max-width: 10vh; /* Adjust size as needed */
 }
 
+/* Align header-right to the right */
 .header-right {
     display: flex;
     flex-direction: column;
-    text-align: center; /* Ensure the text is centered below buttons */
+    align-items: flex-end; /* Aligns buttons + text to the right */
+    text-align: right;
 }
 
-.header .buttons {
+/* Social icons in a row */
+.buttons {
     display: flex;
-    gap: 15px;
+    gap: 1vh; /* Space between icons */
 }
 
+/* Icons */
 .header a {
-    font-size: 20px; /* Adjust size of the icons */
+    font-size: 4vh;
+    transition: transform 0.3s ease; /* Smooth transition for the rotation */
 }
 
+/* Ensure color applies to icons */
 .header a svg {
-    color: #333; /* Set the icon color */
+    color: #333;
+}
+
+/* Hover effect for icons */
+.header a:hover svg {
+    transform: rotate(-15deg); /* Rotates the icon 15 degrees to the left */
+}
+
+/* Ensure text appears below icons */
+.header-right p {
+    margin-top: 0.25vh;
+    font-size: 1.5vh;
+    color: #333;
 }
 
 /* Content area */
 .content {
-    margin-left: 250px; /* Same as sidebar width */
+    margin-left: 15%; /* Same as sidebar width */
+    margin-top: 2%; /* Adjusted for header height */
+    margin-bottom: 2%;
+    height: 94%; /* Adjusted to fit below the header and above the footer */
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden; /* Prevent any overflow */
 }

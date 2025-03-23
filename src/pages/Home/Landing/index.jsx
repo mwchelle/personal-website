@@ -1,15 +1,9 @@
-import About from "../About";
-import Footer from "../Footer";
-import Hero from "../Hero";
-import Portfolio from "../Portfolio";
+import Main from "../Main";
 
 export default function Home() {
     return (
         <>
-        <Hero />
-        <About />
-        <Portfolio />
-        <Footer />
+        <Main />
         </>
     )
 }

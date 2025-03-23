@@ -119,11 +119,13 @@ svg {
 /* Ensure color applies to icons */
 .header a svg {
     color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /* Hover effect for icons */
 .header a:hover svg {
-    transform: rotate(-15deg); /* Rotates the icon 15 degrees to the left */
+    transform: rotate(-15deg); /* Rotates the icon 15 degrees to the left */ 
 }
 
 /* Ensure text appears below icons */

@@ -146,3 +146,14 @@ svg {
     text-align: center;
     overflow: hidden; /* Prevent any overflow */
 }
+
+.unsupported-device {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import About from "./Hero";
 import Projects from "./Portfolio";
 // import Etc from "./sections/Etc";
@@ -12,9 +12,9 @@ import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../assets/logo.png';
 import Me from '../assets/headshot.png';
 
-
 export default function Main() {
     const [section, setSection] = useState("about");
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const sections = {
         about: <About />,
@@ -22,9 +22,27 @@ export default function Main() {
         // etc: <Etc />
     };
 
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup on component unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    // If the window width is less than 1050px, display the "not supported" message
+    if (windowWidth < 1200) {
+        return (
+            <div className="unsupported-device">
+                <h1>my website isn't responsive, sorry 😔</h1>
+            </div>
+        );
+    }
+
     return (
         <div className="container">
-
             {/* Fixed Sidebar */}
             <nav className="sidebar">
                 <div className="sidebar-content">
@@ -37,8 +55,8 @@ export default function Main() {
                             about
                         </li>
                         <li
-                        onClick={() => setSection("projects")}
-                        className={section === "projects" ? "active" : ""}
+                            onClick={() => setSection("projects")}
+                            className={section === "projects" ? "active" : ""}
                         >
                             projects
                         </li>
@@ -56,15 +74,15 @@ export default function Main() {
                     <img src={Logo} alt="logo" className="logo" />
                 </div>
                 <div className="header-right">
-                    <div className = "buttons">
+                    <div className="buttons">
                         <a href="https://www.linkedin.com/in/mwchelle" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedin} size="xs"/>
+                            <FontAwesomeIcon icon={faLinkedin} size="xs" />
                         </a>
                         <a href="https://github.com/mwchelle" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithubSquare} size="xs"/>
+                            <FontAwesomeIcon icon={faGithubSquare} size="xs" />
                         </a>
                         <a href="mailto:mw.chellecx@gmail.com">
-                            <FontAwesomeIcon icon={faSquareArrowUpRight} size="xs"/>
+                            <FontAwesomeIcon icon={faSquareArrowUpRight} size="xs" />
                         </a>
                     </div>
                     <p>resume available by request</p>

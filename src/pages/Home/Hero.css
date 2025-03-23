@@ -24,7 +24,7 @@
 }
 
 .hero-header {
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 .hero-start {
@@ -128,25 +128,4 @@
 
 .sticker-container:hover .sticker-subtitle {
     opacity: 1;
-}
-
-/* Media Queries for responsiveness */
-
-/* For screens smaller than 1500px */
-@media (max-width: 1500px) {
-    .hero-header {
-        font-size: 3vh;
-    }
-
-    .hero-start {
-        font-size: 2.5vh;
-    }
-
-    .hero-text {
-        padding: 8vh; /* Reduce padding on larger screens */
-    }
-
-    .hero-stickers {
-        justify-content: space-around;
-    }
 }

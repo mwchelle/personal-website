@@ -64,7 +64,7 @@ export default function Portfolio() {
 
                     {/* Telco Customer Churn and Splytr with tags */}
                     <h3>
-                        <a href="telco-customer-churn-link" className="project-link">Telco Customer Churn ↗</a>
+                        <a href="https://github.com/mwchelle" className="project-link">Telco Customer Churn ↗</a>
                         <span className="tags-container">
                             <span className="tag">data</span>
                             <span className="tag">ml</span>
@@ -72,7 +72,7 @@ export default function Portfolio() {
                     </h3>
 
                     <h3>
-                        <a href="splytr-link" className="project-link">Splytr ↗</a>
+                        <a href="https://docs.google.com/presentation/d/1q2LfLKEAdFN2EVtVyayNjk4tBc3ljU5J5sVbL5cSoVs/edit?usp=sharing" className="project-link">Splytr ↗</a>
                         <span className="tags-container">
                             <span className="tag">ui/ux</span>
                         </span>

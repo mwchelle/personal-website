@@ -37,7 +37,7 @@ export default function Portfolio() {
             titleColor: "white",
             image: presentify, // Video for Presentify
             tags: ["pm", "ui/ux", "dev"],
-            link: "https://yourproject.com/presentify",
+            link: "https://devpost.com/software/presentify",
             description: "Turn your words into a dynamic presentation with real-time subtitles, visuals, and audio effects—making presentations easier, more interactive, and accessible for all! 🎤📊✨"
         },
     ];

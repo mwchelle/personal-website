@@ -8,7 +8,6 @@
     width: 80%;
     text-align: center;
     position: relative;
-    padding-bottom: 4vh;
     overflow: visible; /* Allows content to expand */
     min-height: 100vh; /* Expands based on content */
 

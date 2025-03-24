@@ -137,36 +137,36 @@ svg {
 
 /* Content area */
 .content {
-    margin-left: 15%; /* Same as sidebar width */
+    margin-left: 15%; /* Matches sidebar width */
     margin-top: 2%; /* Adjusted for header height */
     margin-bottom: 2%;
-    height: 94%; /* Adjusted to fit below the header and above the footer */
+    height: 94%; /* Ensures it fits below the header */
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: visible; /* Allow overflow during fade-in */
+    overflow: hidden; /* Prevents any unwanted overflow */
     padding: 0; /* No extra padding */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 /* Fade-in animation */
 .fade-in {
     opacity: 0;
-    animation: fadeInAnimation 1s ease-in-out forwards;
-    padding: 0; /* Ensure no extra padding is added during the fade-in animation */
-    transform: translateY(0); /* Ensure no shift on the Y axis */
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
+    transform: translateY(10px); /* Slight lift effect */
 }
 
-/* Fade-in keyframe animation */
+/* Keyframes for fade-in */
 @keyframes fadeInAnimation {
     from {
         opacity: 0;
-        transform: translateY(10px); /* Start with a slight shift */
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
-        transform: translateY(0); /* End at normal position */
+        transform: translateY(0);
     }
 }
 

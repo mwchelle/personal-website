@@ -8,6 +8,7 @@
     text-align: center;
     min-height: 100vh; /* Ensures it takes up the full viewport height */
     overflow: visible;
+    padding-left: 10%;
 }
 
 /* Header Container with Text and Devpost Icon */
@@ -146,16 +147,17 @@
     }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1326px) {
     /* Styles for screens smaller than 1400px */
     .projects-section {
         display: flex;
         flex-direction: column;
         justify-content: center; /* Center content vertically */
         align-items: center; /* Center content horizontally */
-        width: 85%;
+        width: 100%;
         text-align: center;
         min-height: 100vh; /* Ensures it takes up the full viewport height */
         overflow: visible;
+        padding-left: 0%;
     }
 }

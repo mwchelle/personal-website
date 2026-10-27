@@ -1,0 +1,15 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%; /* stops iOS from inflating text in landscape */
+  text-size-adjust: 100%;
+  overflow-x: hidden;             /* safety net against sideways scroll on phones */
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+}

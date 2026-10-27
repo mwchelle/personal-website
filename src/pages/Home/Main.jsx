@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import About from "./Hero";
 import Projects from "./Portfolio";
 import "./Main.css";
@@ -13,18 +13,11 @@ import Me from "../assets/headshot.png";
 export default function Main() {
   const [section, setSection] = useState("about");
   const [fade, setFade] = useState(true); // Controls fade effect
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const sections = {
     about: <About />,
     projects: <Projects />,
   };
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const handleSectionChange = (newSection) => {
     if (newSection !== section) {
@@ -35,14 +28,6 @@ export default function Main() {
       }, 300); // Match CSS animation duration
     }
   };
-
-  if (windowWidth < 1250) {
-  return (
-    <div className="unsupported-device">
-      <h1>my website isn't responsive, sorry 😔</h1>
-    </div>
-  );
-}
 
   return (
     <div className="container">

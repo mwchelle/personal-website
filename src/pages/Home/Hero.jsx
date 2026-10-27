@@ -2,7 +2,6 @@ import React from "react";
 import Typed from "typed.js";
 import "./Hero.css"; // Import the Hero.css file
 
-import Bobo from "../assets/stickers/bobo.png";
 import Williams from "../assets/stickers/williams.png";
 import Panda from "../assets/stickers/panda.png";
 import Raptor from "../assets/stickers/raptors.png";
@@ -38,30 +37,24 @@ export default function Hero() {
   const [stickers, setStickers] = React.useState([
     {
       id: 1,
-      src: Bobo,
-      alt: "Bobo Sticker",
-      subtitle: "Bobo & Coco Collector",
-    },
-    {
-      id: 2,
       src: Williams,
       alt: "Williams Sticker",
       subtitle: "Go Williams ): + Oscar Piastri",
     },
-    { id: 3, src: Panda, alt: "Panda Sticker", subtitle: "Fav Animal <3" },
+    { id: 2, src: Panda, alt: "Panda Sticker", subtitle: "Fav Animal <3" },
     {
-      id: 4,
+      id: 3,
       src: Raptor,
       alt: "Raptor Sticker",
       subtitle: "WE'RE WINNING THIS YEAR",
     },
     {
-      id: 5,
+      id: 4,
       src: Skullpanda,
       alt: "Skullpanda Sticker",
       subtitle: "Skullpanda Enjoyer",
     },
-    { id: 6, src: TFT, alt: "TFT Sticker", subtitle: "Peaked D2, Set 4.5 💪" },
+    { id: 5, src: TFT, alt: "TFT Sticker", subtitle: "Peaked D2, Set 4.5 💪" },
   ]);
 
   return (

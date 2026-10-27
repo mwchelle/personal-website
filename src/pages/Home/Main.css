@@ -70,7 +70,7 @@ svg { color: #333; }
   transition: font-weight .2s, text-decoration .2s;
 }
 .sidebar ul li.active { font-weight: 700; text-decoration: underline; }
-.sidebar ul li:hover  { font-weight: 800; }
+.sidebar ul li:hover  { text-decoration: underline; }
 
 /* footer */
 .footer-text {

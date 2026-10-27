@@ -19,7 +19,6 @@ export default function Hero() {
         "ux researcher",
         "developer",
         "data analyst",
-        "tech consultant",
         "product manager",
       ],
       typeSpeed: 35,
@@ -47,14 +46,14 @@ export default function Hero() {
       id: 2,
       src: Williams,
       alt: "Williams Sticker",
-      subtitle: "Go Williams! + Oscar Piastry",
+      subtitle: "Go Williams ): + Oscar Piastri",
     },
     { id: 3, src: Panda, alt: "Panda Sticker", subtitle: "Fav Animal <3" },
     {
       id: 4,
       src: Raptor,
       alt: "Raptor Sticker",
-      subtitle: "Sad Raptors Fan ):",
+      subtitle: "WE'RE WINNING THIS YEAR",
     },
     {
       id: 5,
@@ -75,14 +74,14 @@ export default function Hero() {
             <em>
               <span className="hero--section--changing" ref={el} />
             </em>{" "}
-            who believes in value-based innovation in technology.
+            who loves solving complex technical problems that make a difference.
           </h1>
         </div>
         <div className="hero-content-about">
           <hr className="custom-hr" />
           <div className="hero-currently">
             <h3>currently</h3>
-            <h4>4th year cs + business @ ubc</h4>
+            <h4>cs + business @ ubc, exchange @ vse prague</h4>
           </div>
           <div className="hero-driven">
             <h3>driven by</h3>
@@ -92,7 +91,7 @@ export default function Hero() {
           <div className="hero-also">
             <h3>also</h3>
             <h4>
-              2x TA @ ubc, prose on{" "}
+              4x TA @ ubc, prose on{" "}
               <a
                 href="https://aury.substack.com/"
                 target="_blank"
@@ -108,11 +107,11 @@ export default function Hero() {
           </div>
           <div className="hero-prev">
             <h3>previously</h3>
-            <h4>product @ amex, tech risk @ kpmg, ux research @ huawei</h4>
+            <h4>product @ mongodb, miraterra, amex, tech risk @ kpmg, ux research @ huawei</h4>
           </div>
           <div className="hero-etc">
             <h3>etc.</h3>
-            <h4>sponsorships @ nwplus, vp ext @ ubc esports</h4>
+            <h4>research @ ubc faculty of education, sponsorships @ nwplus, vp ext @ ubc esports</h4>
           </div>
         </div>
 

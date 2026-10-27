@@ -4,10 +4,20 @@ import begriddy from "../assets/griddy.gif";
 import soundchain from "../assets/soundchain.png";
 import capsule from "../assets/capsule.gif";
 import presentify from "../assets/presentify.gif";
+import trojan from "../assets/trojan.gif"
 import "./Portfolio.css";
 
 export default function Portfolio() {
   const projects = [
+    {
+      title: "Trojan 🏆",
+      titleColor: "white",
+      image: trojan,
+      tags: ["pm", "ui/ux", "dev"],
+      link: "https://devpost.com/software/trojan",
+      description:
+        "Multi-agent security scanner and 1 click fixes straight to your reposity. Ship faster and safer (for the vibe-coders). 🔐🎯🔧",
+    },
     {
       title: "BeGriddy 🏆",
       titleColor: "white",

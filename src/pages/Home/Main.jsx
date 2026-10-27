@@ -72,7 +72,7 @@ export default function Main() {
 
           {/* bottom footer with symmetric padding */}
           <p className="footer-text">
-            website made with love by Michelle Wan, last updated Oct 2025
+            website made with love by Michelle Wan, last updated Oct 2026
           </p>
         </div>
       </nav>
